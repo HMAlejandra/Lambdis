@@ -11,7 +11,7 @@ const dbConfig = {
 };
 
 // Crear el pool de conexiones fuera del handler para reutilizarlo
-// lkhklhkljhklhlkhklj
+// Esto es crucial para mejorar el rendimiento y evitar problemas de agotamiento de conexiones en Lambda.
 let pool;
 // cloud computing!!!!
 exports.handler = async (event) => {
